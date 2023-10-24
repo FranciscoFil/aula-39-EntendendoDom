@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <div class="container">
+        <div class="div">
+            <label for="n1">Informe um número</label>
+            <input type="number" name="n1" id="n1">
+            <br>
+            <span id="erro-n1"></span>
+        </div>
+        <div class="div" style="display: flex; gap: 1.9rem; ">
+            <div>
+                <label for="soma">SOMA</label>
+                <input type="radio" name="valores" id="soma">
+            </div>
+            <div>
+                <label for="subtracao">SUBTRAÇÃO</label>
+                <input type="radio" name="valores" id="subtracao">
+            </div>
+            <div>
+                <label for="multiplicacao">MULTIPLICAÇÃO</label>
+                <input type="radio" name="valores" id="multiplicacao">
+            </div>
+            <div>
+                <label for="divisao">DIVISÃO</label>
+                <input type="radio" name="valores" id="divisao">
+            </div>
+        </div>
+        <div class="div">
+            <label for="n2">Informe outro número</label>
+            <input type="number" name="n2" id="n2">
+            <br>
+            <span id="erro-n2"></span>
+        </div>
+        <div class="div">
+            <label for="resultado">Resultado</label> 
+            <input type="text" name="resultado" id="resultado" readonly>
+            <br>
+            <span id="erro-n3"></span>
+        </div>
+        <div>
+            <button onclick="calcularResultado()">Calcular</button>
+        </div>
+    </div>
+</body>
+</html>
